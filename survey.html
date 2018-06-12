@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" text="text/css" href="survey.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+
+    <h1 id="title">Favorite Tennis Player</h1>
+    <div id="outer">
+      <p id="description">Of the "big four" who is your favorite male tennis player?</p>
+      <form id="survey-form" action="index.html">
+        <!-- name -->
+        <div class="row">
+          <label id="name-label" for="name" class="label">* Name:</label>
+          <div class="right-tab">
+            <input class="roundCorner" id="name" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <!-- email -->
+        <div class="row">
+          <label id="email-label" for="email" class="label">* Email:</label>
+          <div class="right-tab">
+            <input class="roundCorner" id="email" type="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <!-- age -->
+        <div class="row">
+          <label id="number-label" for="number" class="label">* Age:</label>
+          <div class="right-tab">
+            <input class="roundCorner" id="number" type="number" name="number" min="1" max="125" placeholder="Age">
+          </div>
+        </div>
+        <!-- tennis player selection -->
+        <div class="row">
+          <label id="dropdown" for="dropdown" class="label">Choose your favorite player:</label>
+          <div class="right-tab">
+            <select class="roundCorner" id="dropdown" class="dropdown" name="player">
+              <option disabled value="">Select a player</option>
+              <option value="federer">Roger Federer</option>
+              <option value="nadal">Rafael Nadal</option>
+              <option value="djokovic">Novak Djokovic</option>
+              <option value="murray">Andy Murray</option>
+            </select>
+          </div>
+        </div>
+        <!-- court surface checkbox -->
+        <div class="row">
+          <label class="label">What is your selected player's best surface?</label>
+          <div class="right-tab">
+            <input id="surface1" type="radio" name="surface" value="1">
+            <label for="surface1">Grass</label><br>
+            <input id="surface2" type="radio" name="surface" value="2">
+            <label for="surface2">Clay</label><br>
+            <input id="surface3" type="radio" name="surface" value="3">
+            <label for="surface3"Hard Court>Hard Court</label>
+          </div>
+        </div>
+        <!-- player attribute -->
+        <div class="row">
+          <label class="label">What are your favorite attributes of this player?</label>
+          <div class="right-tab">
+            <input id="forehand" type="checkbox" name="attribute" value="1">
+            <label for="forehand">Forehand</label><br>
+            <input id="backhand" type="checkbox" name="attribute" value="2">
+            <label for="backhand">Backhand</label><br>
+            <input id="serve" type="checkbox" name="attribute" value="3">
+            <label for="serve">Serve</label><br>
+            <input id="volleys" type="checkbox" name="attribute" value="4">
+            <label for="volleys">Volleys</label><br>
+            <input id="footwork" type="checkbox" name="attribute" value="5">
+            <label for="footwork">Footwork</label>
+          </div>
+        </div>
+        <!-- other comments -->
+        <div class="row">
+          <label for="comment" class="label">Any comments?</label>
+          <div class="right-tab">
+            <textarea class="roundCorner" id="comment" type="text" name="comment" value="" placeholder="Enter your comments here..."></textarea>
+          </div>
+        </div>
+        <!-- submit button -->
+        <button id="submit" type="submit" name="button">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

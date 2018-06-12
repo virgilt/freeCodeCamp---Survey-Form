@@ -1,0 +1,66 @@
+html {
+  background-color: #9BD6E8;
+}
+
+body {
+  text-align: center;
+  font-family: Raleway;
+}
+
+h1  {
+  font-family: Lora;
+}
+
+#outer {
+  background-color: #FAFFFC;
+  margin: 20px auto;
+  padding: 1px 20px 20px 20px;
+  max-width: 600px;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.right-tab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 48%;
+  vertical-align: top;
+  padding-right: 0.5em;
+}
+
+.row {
+  margin: 1.5em auto;
+}
+
+input {
+  margin-bottom: 0.5em;
+}
+
+.roundCorner {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 70%;
+  height: 25px;
+}
+
+#comment {
+  height: 4em;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #828FE8;
+  color: #FAFFFC;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
